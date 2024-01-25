@@ -29,6 +29,24 @@ body {
     padding: 0 20px;
     overflow: hidden;
 }
+.tooltip {
+    font-size: .8rem;
+    background-color: #00b6ff;
+    color: var(--white);
+    padding: 0 4px;
+    border-radius: 6px;
+    position: absolute;
+    opacity: 0;
+    transition: all .2s ease;
+    bottom: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+.tooltip.right {
+    bottom: 0;
+    right: 6px;
+}
 nav {
     position: fixed;
     top: 0;
@@ -71,6 +89,9 @@ nav .wrapper-nav ul li a {
 }
 nav .wrapper-nav ul li a:hover {
     background-color: var(--gray);
+}
+nav .wrapper-nav ul li a:hover .tooltip {
+    opacity: 1;
 }
 nav .wrapper-nav ul li a p {
     opacity: 1;
@@ -130,20 +151,6 @@ section.wrapper-main ul li a {
     text-decoration: none;
     color: var(--black);
     font-size: 2rem;
-}
-section.wrapper-main ul li a .tooltip {
-    font-size: .8rem;
-    background-color: #00b6ff;
-    color: var(--white);
-    padding: 0 4px;
-    border-radius: 6px;
-    position: absolute;
-    opacity: 0;
-    transition: all .2s ease;
-    bottom: 6px;
-    left: 50%;
-    transform: translateX(-50%);
-    pointer-events: none;
 }
 section.wrapper-main ul li a:hover i {
     transform: translateY(-6px);
@@ -250,6 +257,7 @@ section.experience .wrapper-experiences > div .over i {
         transition: width .6s ease;
         overflow: hidden;
         box-shadow: 0 -2px 6px #cfcfcf;
+        padding: 12px 20px;
     }
     nav .wrapper-nav #menu-hamburguer {
         display: none;
@@ -282,6 +290,9 @@ section.experience .wrapper-experiences > div .over i {
     .all-sections {
         position: static;
         width: 100% !important;
+    }
+    section.wrapper-main h1 {
+        font-size: 1.5rem;
     }
     section.hard-skills .skills {
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
