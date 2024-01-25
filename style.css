@@ -238,3 +238,52 @@ section.experience .wrapper-experiences > div .over i {
     color: white;
     position: absolute;
 }
+@media screen and (max-width: 600px) {
+    nav {
+        width: 100vw !important;
+        top: inherit;
+        bottom: 0;
+        height: inherit;
+        left: 0;
+        z-index: 2;
+        background-color: var(--white);
+        transition: width .6s ease;
+        overflow: hidden;
+        box-shadow: 0 -2px 6px #cfcfcf;
+    }
+    nav .wrapper-nav #menu-hamburguer {
+        display: none;
+    }
+    nav .wrapper-nav ul {
+        display: flex;
+        margin: inherit;
+        justify-content: space-around;
+    }
+    nav .wrapper-nav ul li {
+        margin: inherit;
+        flex-basis: 20%;
+    }
+    nav .wrapper-nav ul li a {
+        font-size: 1.4rem;
+        flex-direction: column;
+        background: none;
+    }
+    nav .wrapper-nav ul li a:hover {
+        color: #00b6ff;
+        background: none;
+    }
+    nav.active .wrapper-nav ul li p {
+        width: fit-content;
+        opacity: 1;
+        font-size: .8rem;
+        white-space: normal;
+        text-align: center;
+    }
+    .all-sections {
+        position: static;
+        width: 100% !important;
+    }
+    section.hard-skills .skills {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+}
