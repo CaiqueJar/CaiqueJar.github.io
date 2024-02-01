@@ -318,6 +318,10 @@ section.experience .wrapper-experiences > div .over i {
     section.wrapper-main h1 {
         font-size: 1.5rem;
     }
+    section.projects .projects-grid {
+        display: flex;
+        flex-direction: column;
+    }
     section.hard-skills .skills {
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     }
