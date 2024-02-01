@@ -276,7 +276,7 @@ section.experience .wrapper-experiences > div .over i {
         bottom: 0;
         height: inherit;
         left: 0;
-        z-index: 2;
+        z-index: 6;
         background-color: var(--white);
         transition: width .6s ease;
         overflow: hidden;
