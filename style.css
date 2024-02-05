@@ -34,11 +34,10 @@ body {
     background-color: var(--white);
 }
 .content {
-    max-width: 1200px;
     width: 100%;
     height: 100%;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 20px;
     overflow: hidden;
 }
 .tooltip {
@@ -73,6 +72,7 @@ nav {
     padding: 20px;
     transition: width .6s ease;
     z-index: 6;
+    overflow: hidden;
 }
 nav .wrapper-nav #menu-hamburguer {
     position: absolute;
@@ -115,6 +115,7 @@ nav .wrapper-nav ul li a p {
 }
 nav.active {
     width: 72px;
+    overflow: visible;
 }
 nav.active .wrapper-nav ul li p {
     pointer-events: none;
@@ -197,6 +198,13 @@ section.projects .projects-grid .card img {
     width: 100%;
     border-radius: 6px;
 }
+section.projects .projects-grid .card .icons {
+    display: flex;
+    gap: 12px;
+}
+section.projects .projects-grid .card .icons img {
+    width: 40px;
+}
 section.projects .projects-grid .card a.github-link {
     padding: 6px;
     font-weight: 600;
@@ -206,6 +214,7 @@ section.projects .projects-grid .card a.github-link {
     text-decoration: none;
     font-size: .8rem;
     transition: all .2s ease;
+    height: min-content;
 }
 section.projects .projects-grid .card a.github-link:hover {
     color: white;
@@ -213,6 +222,8 @@ section.projects .projects-grid .card a.github-link:hover {
 }
 section.projects .projects-grid .card .card-footer {
     margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
 }
 section.hard-skills .skills {
     display: grid;
@@ -282,6 +293,9 @@ section.experience .wrapper-experiences > div .over i {
         overflow: hidden;
         box-shadow: 0 -2px 6px #cfcfcf;
         padding: 12px 20px;
+    }
+    nav .tooltip {
+        display: none;
     }
     nav .wrapper-nav #menu-hamburguer {
         display: none;
