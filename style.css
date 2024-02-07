@@ -136,7 +136,10 @@ nav.active ~ .all-sections {
     color: var(--black);
 }
 section {
-    margin: 42px 0;
+    margin: 132px 0;
+}
+section.wrapper-main {
+    margin-top: 0;
 }
 section.wrapper-main h1 {
     font-weight: 500;
