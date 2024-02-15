@@ -276,45 +276,19 @@ section.hard-skills .skills .skill img:hover {
     filter: drop-shadow(0 0 2px rgb(58, 58, 58)); 
     transform: scale(1);
 }
-section.experience .wrapper-experiences {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 20px;
-    row-gap: 60px;
-    margin: 20px 0;
+section.experience .wrapper {
+    display: flex;
+    gap: 100px;
 }
-section.experience .wrapper-experiences .img-container img {
+section.experience .wrapper .splide__slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transform: scale(0.95);
+    transform: scale(.9);
     transition: all .2s ease;
 }
-section.experience .wrapper-experiences .img-container:hover img {
+section.experience .wrapper .splide__slide img:hover {
     transform: scale(1);
-}
-section.experience .wrapper-experiences > div {
-    position: relative;
-}
-section.experience .wrapper-experiences > div .over {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(44, 44, 44, 0.61);
-    opacity: 0;
-    transition: all .2s ease;
-    z-index: 2;
-}
-section.experience .wrapper-experiences > div:hover .over {
-    opacity: 1;
-}
-section.experience .wrapper-experiences > div .over i {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 2rem;
-    color: white;
-    position: absolute;
 }
 footer {
     background-color: white;
@@ -370,5 +344,9 @@ footer ul li a:hover > .tooltip {
     }
     section.hard-skills .skills {
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+    section.experience .wrapper {
+        flex-direction: column;
+        gap: 32px;
     }
 }

@@ -6,6 +6,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -139,7 +140,7 @@
     </section>
     <section class="projects" id="projects">
         <div class="content">
-            <h2>Alguns <span>projetos</span> recentes <span>meu</span></h2>
+            <h2>Alguns <span>projetos</span> recentes <span>meus</span></h2>
             <div class="projects-grid">
                 <div class="card">
                     <img src="img/blog.jpeg" alt="">
@@ -245,39 +246,36 @@
     </section>
     <section class="experience" id="experience">
         <div class="content">
-            <h2>Experiência <span>profissional</span></h2>
-            <div class="wrapper-experiences">
-                <div class="img-container">
-                    <a href="https://www.andreahokamaodontologia.com.br" target="_blank">
-                        <div class="over">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </div>
-                        <img src="img/andrea.jpeg" alt="">
-                    </a>
+            <div class="wrapper">
+                <div class="text">
+                    <h2>Experiência <span>profissional</span></h2>
+                    <p>Websites que desenvolvi no meu emprego!</p>
                 </div>
-                <div class="img-container">
-                    <a href="https://www.mormarcas.com.br" target="_blank">
-                        <div class="over">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </div>
-                        <img src="img/mor.jpeg" alt="">
-                    </a>
-                </div>
-                <div class="img-container">
-                    <a href="https://www.techplug.com.br" target="_blank">
-                        <div class="over">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </div>
-                        <img src="img/techplug.jpeg" alt="">
-                    </a>
-                </div>
-                <div class="img-container">
-                    <a href="https://www.draemilymunhoz.com.br" target="_blank">
-                        <div class="over">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </div>
-                        <img src="img/emily.jpeg" alt="">
-                    </a>
+                <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <a href="https://andreahokamaodontologia.com.br/" target="_blank">
+                                    <img src="img/screencapture-andreahokamaodontologia-br-2024-02-15-16_53_10.png" alt="">
+                                </a>
+                            </li>
+                            <li class="splide__slide">
+                                <a href="http://draemilymunhoz.com.br/" target="_blank">
+                                    <img src="img/screencapture-draemilymunhoz-br-2024-02-15-16_51_57.png" alt="">
+                                </a>
+                            </li>
+                            <li class="splide__slide">
+                                <a href="https://mormarcas.com.br/" target="_blank">
+                                    <img src="img/screencapture-mormarcas-br-2024-02-15-16_54_06.png" alt="">
+                                </a>
+                            </li>
+                            <li class="splide__slide">
+                                <a href="https://techplug.com.br/" target="_blank">
+                                    <img src="img/screencapture-techplug-br-2024-02-15-16_52_31.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -315,6 +313,22 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function() {
+            var splide = new Splide( '.splide', {
+                type: 'loop',
+                perPage: 3,
+                gap: "1em",
+                breakpoints: {
+                    640: {
+                        perPage: 1,
+                    },
+                }
+            });
+            splide.mount();
+        } );
+    </script>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
 
