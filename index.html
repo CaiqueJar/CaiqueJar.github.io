@@ -9,65 +9,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="active">
-        <div class="wrapper-nav">
-            <i class="fa-solid fa-bars" id="menu-hamburguer"></i>
+    <div class="go-back">
+        <a href="#header"><i class="fa-solid fa-chevron-up"></i></a>
+    </div>
+    <header id="header">
+        <div class="content">
             <ul>
                 <li>
-                    <a href="#main">
-                        <i class="fa-solid fa-house"></i>
-                        <p>Home</p>
-                        <div class="tooltip right">
-                            Home
-                        </div>
-                    </a>
+                    <a href="">Sobre mim</a>
                 </li>
                 <li>
-                    <a href="#about-me">
-                        <i class="fa-solid fa-user"></i>
-                        <p>Sobre mim</p>
-                        <div class="tooltip right">
-                            Sobre mim
-                        </div>
-                    </a>
+                    <a href="">Projetos</a>
                 </li>
                 <li>
-                    <a href="#projects">
-                        <i class="fa-solid fa-folder"></i>
-                        <p>Projetos</p>
-                        <div class="tooltip right">
-                            Projetos
-                        </div>
-                    </a>
+                    <a href="">Hard skills</a>
                 </li>
                 <li>
-                    <a href="#hard-skills">
-                        <i class="fa-solid fa-list-check"></i>
-                        <p>Hard skills</p>
-                        <div class="tooltip right">
-                            Hard skills
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#experience">
-                        <i class="fa-solid fa-building"></i>
-                        <p>Experiência profissional</p>
-                        <div class="tooltip right">
-                            Home
-                        </div>
-                    </a>
+                    <a href="">Experiência profissional</a>
                 </li>
             </ul>
         </div>
-    </nav>
-    <div class="all-sections">
+    </header>
+    <section class="wrapper-main" id="main">
         <div class="content">
-            <section class="wrapper-main" id="main">
+            <div class="wrapper">
                 <h1>
                     <span id="typing">Olá, me chamo Caique Dias</span>
                 </h1>
-                <h2>Sou um <span>desenvolvedor web</span></h2>
+                <h2>Sou um <span class="web-dev">desenvolvedor web</span></h2>
                 <ul>
                     <li>
                         <a href="">
@@ -102,207 +71,229 @@
                         </a>
                     </li>
                 </ul>
-            </section>
-            <section class="about-me" id="about-me">
-                <h2>Sobre mim</h2>
-                <p>
-                    Sou desenvolvedor com foco maior no back end.
-                </p>
-                <p>
-                    Possuo experiência profissional, cursei o técnico em Desenvolvimento de Sistemas na Etec de Guaianases aonde pude aprender tecnologias como HTML, CSS, Java, Mysql e Php com Laravel, cujo os dois últimos utilizei para realizar diversos projetos presentes no meu Github e trabalho com esses atualmente.
-                </p>
-                <p>
-                    Também me aventurei com o curso de Criação de Jogos da Danki Code e desenvolvi diversos games com Java.
-                </p>
-            </section>
-            <section class="projects" id="projects">
-                <h2>Alguns projetos recentes meu</h2>
-                <div class="projects-grid">
-                    <div class="card">
-                        <img src="img/blog.jpeg" alt="">
-                        <hr>
-                        <div class="card-content">
-                            <p>
-                                Sistema simples de um blog feito com Php puro e Mysql para fins de estudos.
-                            </p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="https://github.com/CaiqueJar/blog" class="github-link" target="_blank">Veja mais no meu Github</a>
-                            <div class="icons">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" />
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/composer/composer-original.svg" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="img/galeria.jpeg" alt="">
-                        <hr>
-                        <div class="card-content">
-                            <p>
-                                Uma galeria de imagens simples aonde se pode enviar suas fotos e organiza-las em categorias que você criar. Sistema esse que pode ser escalável.
-                            </p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="https://github.com/CaiqueJar/gallery" class="github-link" target="_blank">Veja mais no meu Github</a>
-                            <div class="icons">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" />
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/composer/composer-original.svg" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="img/resizer.jpeg" alt="">
-                        <hr>
-                        <div class="card-content">
-                            <p>
-                                Uma ideia que tive ao perceber que no meu serviço alguns colegas tinham dificuldades de converter imagens para .webp e reduzi-las usando Photoshop. Para isso, desenvolvi um conversor de imagens.
-                            </p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="https://github.com/CaiqueJar/resizer-php" class="github-link" target="_blank">Veja mais no meu Github</a>
-                            <div class="icons">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" />
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/composer/composer-original.svg" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="img/nextmeal.png" alt="">
-                        <hr>
-                        <div class="card-content">
-                            <p>
-                                Aplicação web para restaurantes divulgarem o seu trabalho e gerirem o seu estabelecimento através de um sistema de reservas. Desenvolvimento como TCC na Etec de Guaianases no curso técnico de desenvolvimento de sistemas.
-                            </p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="https://github.com/CaiqueJar/resizer-php" class="github-link" target="_blank">Veja mais no meu Github</a>
-                            <div class="icons">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" />
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/composer/composer-original.svg" />
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="img/fase1.png" alt="">
-                        <hr>
-                        <div class="card-content">
-                            <p>
-                                Um jogo de plataforma genérico com propósito de estudar funcionalidades de jogos, como mecanismo de pulo, animação de sprites, mudança de fases, luta com chefe, etc.
-                            </p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="https://github.com/CaiqueJar/platform-simple-game" class="github-link" target="_blank">Veja mais no meu Github</a>
-                            <div class="icons">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="img/cobrinha.jpeg" alt="">
-                        <hr>
-                        <div class="card-content">
-                            <p>
-                                Jogo da cobrinha feito em Java desenvolvido para estudo.
-                            </p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="https://github.com/CaiqueJar/game-snake" class="github-link" target="_blank">Veja mais no meu Github</a>
-                            <div class="icons">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="hard-skills" id="hard-skills">
-                <h2>Hard skills</h2>
-                <div class="skills">
-                    <div class="skill">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" />
-                    </div>
-                    <div class="skill">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" />
-                    </div>
-                    <div class="skill">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/composer/composer-original.svg" />
-                    </div>
-                    <div class="skill">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
-                    </div>
-                    <div class="skill">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
-                    </div>
-                    <div class="skill">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
-                    </div>
-                    <div class="skill">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-                    </div>
-                    <div class="skill">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original-wordmark.svg" />
-                    </div>
-                    <div class="skill">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original-wordmark.svg" />
-                    </div>
-                    <div class="skill">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" />
-                    </div>
-                    <div class="skill">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
-                    </div>
-                </div>
-            </section>
-            <section class="experience" id="experience">
-                <h2>Experiência profissional</h2>
-                <span>Sites que desenvolvi</span>
-                <div class="wrapper-experiences">
-                    <div class="img-container">
-                        <a href="https://www.andreahokamaodontologia.com.br" target="_blank">
-                            <div class="over">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                            </div>
-                            <img src="img/andrea.jpeg" alt="">
-                        </a>
-                    </div>
-                    <div class="img-container">
-                        <a href="https://www.mormarcas.com.br" target="_blank">
-                            <div class="over">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                            </div>
-                            <img src="img/mor.jpeg" alt="">
-                        </a>
-                    </div>
-                    <div class="img-container">
-                        <a href="https://www.techplug.com.br" target="_blank">
-                            <div class="over">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                            </div>
-                            <img src="img/techplug.jpeg" alt="">
-                        </a>
-                    </div>
-                    <div class="img-container">
-                        <a href="https://www.draemilymunhoz.com.br" target="_blank">
-                            <div class="over">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                            </div>
-                            <img src="img/emily.jpeg" alt="">
-                        </a>
-                    </div>
-                </div>
-            </section>
+                <span class="symbol">
+                    ?>
+                </span>
+            </div>
         </div>
-    </div>
+    </section>
+    <section class="about-me" id="about-me">
+        <div class="content">
+            <div class="wrapper-about-me">
+                <div class="monitor">
+                    <p><span style="color: green;">Dias</span>:~$</p>
+                    <p><i style="color: green;" class="fa-solid fa-check"></i> Dedicado a aprender</p>
+                    <p><i style="color: green;" class="fa-solid fa-check"></i> Focado</p>
+                    <p><i style="color: green;" class="fa-solid fa-check"></i> Pontual</p>
+                    <p><i style="color: green;" class="fa-solid fa-check"></i> Ágil</p>
+                </div>
+                <div>
+                    <h2>Sobre mim</h2>
+                    <p>
+                        Sou desenvolvedor com foco maior no back end.
+                    </p>
+                    <p>
+                        Possuo experiência profissional, cursei o técnico em Desenvolvimento de Sistemas na Etec de Guaianases aonde pude aprender tecnologias como HTML, CSS, Java, Mysql e Php com Laravel, cujo os dois últimos utilizei para realizar diversos projetos presentes no meu Github e trabalho com esses atualmente.
+                    </p>
+                    <p>
+                        Também me aventurei com o curso de Criação de Jogos da Danki Code e desenvolvi diversos games com Java.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="hard-skills" id="hard-skills">
+        <div class="content">
+            <h2>Hard skills</h2>
+            <div class="skills">
+                <div class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" />
+                </div>
+                <div class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" />
+                </div>
+                <div class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/composer/composer-original.svg" />
+                </div>
+                <div class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
+                </div>
+                <div class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+                </div>
+                <div class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+                </div>
+                <div class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                </div>
+                <div class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original-wordmark.svg" />
+                </div>
+                <div class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original-wordmark.svg" />
+                </div>
+                <div class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" />
+                </div>
+                <div class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="projects" id="projects">
+        <div class="content">
+            <h2>Alguns projetos recentes meu</h2>
+            <div class="projects-grid">
+                <div class="card">
+                    <img src="img/blog.jpeg" alt="">
+                    <hr>
+                    <div class="card-content">
+                        <p>
+                            Sistema simples de um blog feito com Php puro e Mysql para fins de estudos.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://github.com/CaiqueJar/blog" class="github-link" target="_blank">Veja mais no meu Github</a>
+                        <div class="icons">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/composer/composer-original.svg" />
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/galeria.jpeg" alt="">
+                    <hr>
+                    <div class="card-content">
+                        <p>
+                            Uma galeria de imagens simples aonde se pode enviar suas fotos e organiza-las em categorias que você criar. Sistema esse que pode ser escalável.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://github.com/CaiqueJar/gallery" class="github-link" target="_blank">Veja mais no meu Github</a>
+                        <div class="icons">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/composer/composer-original.svg" />
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/resizer.jpeg" alt="">
+                    <hr>
+                    <div class="card-content">
+                        <p>
+                            Uma ideia que tive ao perceber que no meu serviço alguns colegas tinham dificuldades de converter imagens para .webp e reduzi-las usando Photoshop. Para isso, desenvolvi um conversor de imagens.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://github.com/CaiqueJar/resizer-php" class="github-link" target="_blank">Veja mais no meu Github</a>
+                        <div class="icons">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/composer/composer-original.svg" />
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/nextmeal.png" alt="">
+                    <hr>
+                    <div class="card-content">
+                        <p>
+                            Aplicação web para restaurantes divulgarem o seu trabalho e gerirem o seu estabelecimento através de um sistema de reservas. Desenvolvimento como TCC na Etec de Guaianases no curso técnico de desenvolvimento de sistemas.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://github.com/CaiqueJar/resizer-php" class="github-link" target="_blank">Veja mais no meu Github</a>
+                        <div class="icons">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/composer/composer-original.svg" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" />
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/fase1.png" alt="">
+                    <hr>
+                    <div class="card-content">
+                        <p>
+                            Um jogo de plataforma genérico com propósito de estudar funcionalidades de jogos, como mecanismo de pulo, animação de sprites, mudança de fases, luta com chefe, etc.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://github.com/CaiqueJar/platform-simple-game" class="github-link" target="_blank">Veja mais no meu Github</a>
+                        <div class="icons">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" />
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/cobrinha.jpeg" alt="">
+                    <hr>
+                    <div class="card-content">
+                        <p>
+                            Jogo da cobrinha feito em Java desenvolvido para estudo.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://github.com/CaiqueJar/game-snake" class="github-link" target="_blank">Veja mais no meu Github</a>
+                        <div class="icons">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="experience" id="experience">
+        <div class="content">
+            <h2>Experiência profissional</h2>
+            <div class="wrapper-experiences">
+                <div class="img-container">
+                    <a href="https://www.andreahokamaodontologia.com.br" target="_blank">
+                        <div class="over">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <img src="img/andrea.jpeg" alt="">
+                    </a>
+                </div>
+                <div class="img-container">
+                    <a href="https://www.mormarcas.com.br" target="_blank">
+                        <div class="over">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <img src="img/mor.jpeg" alt="">
+                    </a>
+                </div>
+                <div class="img-container">
+                    <a href="https://www.techplug.com.br" target="_blank">
+                        <div class="over">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <img src="img/techplug.jpeg" alt="">
+                    </a>
+                </div>
+                <div class="img-container">
+                    <a href="https://www.draemilymunhoz.com.br" target="_blank">
+                        <div class="over">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <img src="img/emily.jpeg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="content">
+            <span>Desenvolvido por Dias</span>
+        </div>
+    </footer>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            let menu = document.getElementById('menu-hamburguer');
-            menu.addEventListener("click", function() {
-                document.querySelector("nav").classList.toggle("active");
-            });
 
             typingAction();
         });
