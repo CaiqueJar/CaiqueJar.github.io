@@ -66,6 +66,7 @@ body {
     right: 20px;
     padding: 20px;
     border-radius: 50%;
+    z-index: 10;
 }
 .go-back a {
     color: var(--black);
@@ -73,7 +74,7 @@ body {
     font-size: 2rem;
 }
 h2 {
-    font-size: 3rem;
+    font-size: clamp(2rem, 2vw, 3rem);
     font-weight: 500;
     color: var(--black);
 }
@@ -215,7 +216,7 @@ section.about-me .wrapper-about-me .border {
     z-index: 1;
     transform: rotate(-1deg);
 }
-section.about-me .wrapper-about-me .monitor:hover {
+section.about-me:hover .wrapper-about-me .monitor {
     transform: translate(-20px, -20px) rotate(-1deg);
 }
 section.projects .projects-grid {
@@ -344,6 +345,12 @@ footer ul li a:hover > .tooltip {
     bottom: -32%;
 }
 @media screen and (max-width: 768px) {
+    section.about-me .wrapper-about-me .monitor {
+        pointer-events: none;
+    }
+    section.about-me .wrapper-about-me .monitor .border {
+        display: none;
+    }
     header ul li a span {
         display: none;
     }
